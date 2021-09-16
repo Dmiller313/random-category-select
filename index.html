@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="main-content">
+            <div class="form-container">
+                <form onsubmit="">
+                    <h2>Category:</h2>
+                    <select id="mode-select" multiple></select>
+                    <h2>Character:</h2>
+                    <select id="character-select" multiple></select>
+                    <h2>Modifier:</h2>
+                    <select id="modifier-select" multiple></select>
+                    <h2>Number of modifiers to select:</h2>
+                    <select id="num-modifiers">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <p id="invalid-selection"></p>
+                    <input type="button" onclick="updateResults()" value="Submit">
+                </form>
+            </div>
+            <div id="results-container">
+                <h3>Mode: <span id="mode-result"></span></h3>
+                <h3>Character: <span id="character-result"></span></h3>
+                <h3>Modifier: <span id="modifier-result"></span></h3>
+            </div>
+        </div>
+    </body>
+</html>
